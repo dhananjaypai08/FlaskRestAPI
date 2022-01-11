@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "your_postman_id",
+		"_postman_id": "your postman id",
 		"name": "Flask Api testing",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -87,6 +87,42 @@
 								{
 									"key": "city",
 									"value": "Mumbai"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "place_api",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/place?placeId=8&name=The Food Town&rating=4.5",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"place"
+							],
+							"query": [
+								{
+									"key": "placeId",
+									"value": "8"
+								},
+								{
+									"key": "name",
+									"value": "The Food Town"
+								},
+								{
+									"key": "rating",
+									"value": "4.5"
 								}
 							]
 						}

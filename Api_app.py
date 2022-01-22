@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from flask_restful import Api, Resource, reqparse
 import pandas as pd
 import ast
@@ -69,6 +69,10 @@ class Place(Resource):
 
 
 api.add_resource(Place, '/place')
+
+@app.route("/")
+def main():
+    return render_template('index.html')
 
 if __name__=='__main__':
     app.run(debug=True)

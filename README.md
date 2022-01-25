@@ -22,7 +22,6 @@ You can check your flask version using ```flask --version```
 * Install the requirements ```pip install -r requirements.txt```
 * Run the python Api_app.py (run like any other python file) once the server is on and running hop on to [Home](http://127.0.0.1:5000) 
 
-  Note: Homepage is yet to be developed
   
 Note- Debug mode is on *for now*
 

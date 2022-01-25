@@ -3,9 +3,13 @@
 #### This is used to get the ratings of particular restaurant in any location
 > This data is not fetched and self made so it has not covered many locations **for now**
 
+
+> The idea behind making this API is to use it for creating an application where users can get restaurant ratings of any restaurants they want. And the data which will help for showcasing the restaurant details is this API
+
 Building Rest API using flask which has two endpoints 
 - Client - provides users id, name, city, place
 - Place  - provides place id, name, rating
+
 
 ## Getting Started
 These instructions will get you this project running on your local device.

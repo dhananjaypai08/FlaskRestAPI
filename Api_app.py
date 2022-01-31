@@ -25,8 +25,9 @@ class Client(Resource):
         # read csv data
 
         if args['userId'] in list(data['userId']):
-            return {'message': f"username '{args['userId']}' already exits."}, 409
-        
+            return {'message': f"userId '{args['userId']}' already exits."}, 409
+        elif not args['userId'].isnumeric():
+            return {'message': f"userId must be and integer"}, 409
         new_data_client = pd.DataFrame({'userId': [args['userId']], 'name': [args['name']], 'city': [args['city']], 'place': [[]] })
         data = data.append(new_data_client, ignore_index=True)
         dict_data = data.to_dict()
@@ -57,7 +58,9 @@ class Place(Resource):
         data = pd.read_csv('Dataset\place.csv')
 
         if args['placeId'] in list(data['placeId']):
-            return {'message': f"place '{args['placeId']}' already exits."}, 409
+            return {'message': f"place '{args['placeId']}' already exists."}, 409
+        elif args['name'] in list(data['name']):
+            return {'message': f"place name '{args['name']}' already exists"}, 409
         
         new_data_client = pd.DataFrame({'placeId': [args['placeId']], 'name': [args['name']], 'rating': [args['rating']]})
         data = data.append(new_data_client, ignore_index=True)

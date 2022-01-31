@@ -1,7 +1,7 @@
 userId,name,city,place
-a1b,Joe,Paris,"['0001', '0002', '0008']"
-a2c,Jenny,London,"['0003', '0004']"
-b1b,Jack,London,"['0003', '0005']"
-b2c,Jill,Berlin,"['0006', '0007']"
-dj08,dhananjay,Mumbai,[]
-
+1,dhananjay,Kalyan,[Sahjanand Chowk]
+2,dhananjay,Kalyan,[Prem Auto]
+3,dhananjay,Grant Road,[Grant Road]
+4,dhananjay,Kalyan,[Godrej Park]
+5,dhananjay,Kalyan,[Vasant Valley Road]
+6,dhananjay,Kalyan,[Godrej Hill]

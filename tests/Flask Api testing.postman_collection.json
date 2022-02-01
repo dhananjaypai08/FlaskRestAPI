@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "your postman id",
+		"_postman_id": "7a1404ed-0d5c-468b-8660-b8acfb109485",
 		"name": "Flask Api testing",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -63,7 +63,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/client?userId=dj08&name=dhananjay&city=Mumbai",
+							"raw": "http://127.0.0.1:5000/client?userId=21&name=dhananjay&city=Kalyan&place=[Mohammed Ali Chowk]",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -78,7 +78,7 @@
 							"query": [
 								{
 									"key": "userId",
-									"value": "dj08"
+									"value": "21"
 								},
 								{
 									"key": "name",
@@ -86,7 +86,11 @@
 								},
 								{
 									"key": "city",
-									"value": "Mumbai"
+									"value": "Kalyan"
+								},
+								{
+									"key": "place",
+									"value": "[Mohammed Ali Chowk]"
 								}
 							]
 						}
@@ -99,7 +103,7 @@
 						"method": "POST",
 						"header": [],
 						"url": {
-							"raw": "http://127.0.0.1:5000/place?placeId=8&name=The Food Town&rating=4.5",
+							"raw": "http://127.0.0.1:5000/place?placeId=21&name=Hotel Gopal Krishna&rating=3.9",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -114,15 +118,15 @@
 							"query": [
 								{
 									"key": "placeId",
-									"value": "8"
+									"value": "21"
 								},
 								{
 									"key": "name",
-									"value": "The Food Town"
+									"value": "Hotel Gopal Krishna"
 								},
 								{
 									"key": "rating",
-									"value": "4.5"
+									"value": "3.9"
 								}
 							]
 						}

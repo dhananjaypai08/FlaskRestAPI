@@ -19,6 +19,7 @@ class Client(Resource):
         requirements.add_argument('userId', required=True)
         requirements.add_argument('name', required=True)
         requirements.add_argument('city', required=True)
+        requirements.add_argument('place',required=True)
         args = requirements.parse_args()
 
         data = pd.read_csv('Dataset\client.csv')
@@ -28,7 +29,7 @@ class Client(Resource):
             return {'message': f"userId '{args['userId']}' already exits."}, 409
         elif not args['userId'].isnumeric():
             return {'message': f"userId must be and integer"}, 409
-        new_data_client = pd.DataFrame({'userId': [args['userId']], 'name': [args['name']], 'city': [args['city']], 'place': [[]] })
+        new_data_client = pd.DataFrame({'userId': [args['userId']], 'name': [args['name']], 'city': [args['city']], 'place': [args['place']] })
         data = data.append(new_data_client, ignore_index=True)
         dict_data = data.to_dict()
         data.to_csv('Dataset\client.csv',index=False)

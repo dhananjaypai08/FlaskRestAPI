@@ -37,4 +37,4 @@ Note- Debug mode is on *for now*
 ## Update
 1) Get can be fetched for both endpoints.Client: **[Client](http://127.0.0.1:5000/client)**  Place: **[Place](http://127.0.0.1:5000/place)** 
 2) Post available for both client's and place's endpoint.
-3) Tested on Postman.
+3) Tested on Postman and the tests right now contains only the json file of the entire collection of testing.
